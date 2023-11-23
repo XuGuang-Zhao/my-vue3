@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 
 /*
@@ -10,4 +12,6 @@ import App from './App.vue'
  用法：新实例调用mount()方法后才会渲染出来
  参数：DOM元素或者CSS选择器
 */
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(ElementPlus)
+app.mount('#app')
