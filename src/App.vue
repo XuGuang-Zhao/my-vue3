@@ -1,14 +1,7 @@
 <script setup>
-import day9 from './views/day9.vue';
-import {ref, onMounted} from 'vue'
-
-const child = ref(null)
-onMounted(() => {
-  console.log('child data', child.value.a)
-})
-
+import day10 from './views/day10.vue';
 </script>
 
 <template>
-
+  <day-10 />
 </template>
